@@ -2,24 +2,11 @@
   "name": "clipchef",
   "version": "1.0.0",
   "private": true,
-<<<<<<< HEAD
-  "scripts": {
-    "frontend:start": "npm start --prefix clipchef-frontend",
-    "frontend:install": "npm install --prefix clipchef-frontend",
-    "backend:build": "cd clipchef-backend && sam build",
-    "backend:start": "cd clipchef-backend && sam local start-api",
-    "backend:deploy": "cd clipchef-backend && sam deploy"
-=======
-  "workspaces": [
-    "frontend"
-  ],
   "scripts": {
     "frontend:start": "npm start --prefix frontend",
     "frontend:install": "npm install --prefix frontend",
     "backend:build": "cd backend && sam build",
     "backend:start": "cd backend && sam local start-api",
-    "backend:deploy": "cd backend && sam deploy",
-    "install-all": "npm install && npm run frontend:install"
->>>>>>> 2a37e58 (rename backend & frontend folders)
+    "backend:deploy": "cd backend && sam deploy"
   }
 }
