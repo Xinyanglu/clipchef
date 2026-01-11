@@ -1,0 +1,16 @@
+{
+  "name": "clipchef",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "clipchef-frontend"
+  ],
+  "scripts": {
+    "frontend:start": "npm start --prefix clipchef-frontend",
+    "frontend:install": "npm install --prefix clipchef-frontend",
+    "backend:build": "cd clipchef-backend && sam build",
+    "backend:start": "cd clipchef-backend && sam local start-api",
+    "backend:deploy": "cd clipchef-backend && sam deploy",
+    "install-all": "npm install && npm run frontend:install"
+  }
+}
