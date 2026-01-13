@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "frontend:start": "npm start --prefix frontend",
+    "frontend:build": "npm build --prefix frontend",
     "frontend:install": "npm install --prefix frontend",
     "backend:build": "cd backend && sam build",
     "backend:start": "cd backend && sam local start-api",
